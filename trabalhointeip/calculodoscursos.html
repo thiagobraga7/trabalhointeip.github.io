@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escolha seu curso</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <h1> Calcule o valor que será gasto de acordo com seus cursos por mês </h1>
+  <p>Aula de Canto- R$130,00</p>
+  <p>Aula de Violão- R$110,00</p>
+  <p>Aula de Gaita- R$90,00</p>
+  <p>Aula de Clarinete- R$130,00</p>
+  <p>Aula de Ukulele- R$100,00</p>
+  <p>Aula de Trompete- R$110,00</p>
+
+  <div id="app"> 
+ 
+  
+  O valor que você pagará por mês será:{{n1+n2+n3+n4+n5+n6}} <br />
+  
+
+  <input v-model.number="n1"><br/>
+  <input v-model.number="n2"><br/>
+  <input v-model.number="n3"><br/>
+  <input v-model.number="n4"><br/>
+  <input v-model.number="n5"><br/>
+  <input v-model.number="n6"><br/>
+</div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+      	n1:0,
+      	n2:0,
+      	n3:0,
+      	n4:0,
+      	n5:0,
+      	n6:0
+        
+      }
+    })
+  </script>
+</body>
+</html>
